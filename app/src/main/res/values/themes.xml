@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Core -->
+    <style name="Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor">@color/systemBarColor</item>
+        <item name="android:navigationBarColor">@color/systemBarColor</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme" />
+
+    <style name="Theme.Launch" parent="Theme.App">
+<!--        <item name="android:windowBackground">@drawable/background_launch</item>-->
+    </style>
+
+    <style name="Theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
