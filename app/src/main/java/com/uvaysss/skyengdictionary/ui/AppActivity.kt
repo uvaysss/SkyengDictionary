@@ -9,7 +9,7 @@ import androidx.core.view.children
 import com.uvaysss.skyengdictionary.R
 import com.uvaysss.skyengdictionary.databinding.ActivityAppBinding
 import com.uvaysss.skyengdictionary.ui.core.hideKeyboard
-import com.uvaysss.skyengdictionary.ui.core.navigation.FlowFragmentStateChanger
+import com.uvaysss.skyengdictionary.ui.core.navigation.AppFragmentStateChanger
 import com.uvaysss.skyengdictionary.ui.wordlist.WordListKey
 import com.zhuinden.simplestack.History
 import com.zhuinden.simplestack.SimpleStateChanger
@@ -52,7 +52,7 @@ class AppActivity : AppCompatActivity() {
             if (consumed) insets.consumeSystemWindowInsets() else insets
         }
 
-        val fragmentStateChanger = FlowFragmentStateChanger(
+        val fragmentStateChanger = AppFragmentStateChanger(
             supportFragmentManager,
             R.id.viewAppRoot
         )

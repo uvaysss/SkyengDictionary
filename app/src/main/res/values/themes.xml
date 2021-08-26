@@ -15,7 +15,6 @@
     <style name="Theme.App" parent="Theme" />
 
     <style name="Theme.Launch" parent="Theme.App">
-<!--        <item name="android:windowBackground">@drawable/background_launch</item>-->
     </style>
 
     <style name="Theme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />

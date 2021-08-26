@@ -16,11 +16,4 @@ interface ApiService {
         @Query("page") page: Int,
         @Query("pageSize") limit: Int
     ) : List<WordResponse>
-
-    @GET("/api/public/v1/words/search")
-    suspend fun getWordMeanings(
-        @Query("search") search: String,
-        @Query("page") page: Int,
-        @Query("pageSize") limit: Int
-    )
 }

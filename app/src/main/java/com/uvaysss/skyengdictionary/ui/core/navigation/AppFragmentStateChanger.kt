@@ -4,7 +4,6 @@ import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.uvaysss.skyengdictionary.R
 import com.zhuinden.simplestack.StateChange
 import com.zhuinden.simplestackextensions.fragments.DefaultFragmentStateChanger
 
@@ -12,7 +11,7 @@ import com.zhuinden.simplestackextensions.fragments.DefaultFragmentStateChanger
  * Created by uvays on 22.08.2021.
  */
 
-class FlowFragmentStateChanger(
+class AppFragmentStateChanger(
     fragmentManager: FragmentManager,
     @IdRes containerId: Int
 ) : DefaultFragmentStateChanger(fragmentManager, containerId) {
@@ -21,24 +20,14 @@ class FlowFragmentStateChanger(
         fragmentTransaction: FragmentTransaction,
         stateChange: StateChange
     ) {
-        fragmentTransaction.setCustomAnimations(
-            R.anim.slide_in,
-            R.anim.fade_out,
-            R.anim.fade_in,
-            R.anim.slide_out
-        )
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
     }
 
     override fun onBackwardNavigation(
         fragmentTransaction: FragmentTransaction,
         stateChange: StateChange
     ) {
-        fragmentTransaction.setCustomAnimations(
-            R.anim.fade_in,
-            R.anim.slide_out,
-            R.anim.fade_out,
-            R.anim.fade_out
-        )
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
     }
 
     override fun onReplaceNavigation(

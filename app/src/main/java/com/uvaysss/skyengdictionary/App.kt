@@ -4,6 +4,7 @@ import android.app.Application
 import com.uvaysss.skyengdictionary.di.AppComponent
 import com.uvaysss.skyengdictionary.di.DaggerAppComponent
 import com.uvaysss.skyengdictionary.di.module.AndroidModule
+import com.uvaysss.skyengdictionary.di.module.DataModule
 import com.uvaysss.skyengdictionary.di.module.NetworkModule
 import timber.log.Timber
 
@@ -26,6 +27,7 @@ class App : Application() {
             .builder()
             .androidModule(AndroidModule(this))
             .networkModule(NetworkModule())
+            .dataModule(DataModule())
             .build()
     }
 
