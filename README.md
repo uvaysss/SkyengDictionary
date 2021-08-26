@@ -1,7 +1,9 @@
 # SkyengDictionary
 
 `$ git clone https://github.com/uvaysss/SkyengDictionary.git`
-  
+
+## Использованные библиотеки
+
 **Для асинхронной работы**
 * implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
 
